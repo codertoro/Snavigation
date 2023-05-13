@@ -98,8 +98,8 @@ var se_list_preinstall = {
 // 默认快捷方式
 var quick_list_preinstall = {
     '1': {
-        title: "Vercel",
-        url: "https://vercel.com/",
+        title: "主站",
+        url: "https://www.codertoro.com/",
     },
     '2': {
         title: "GitHub",
@@ -110,7 +110,7 @@ var quick_list_preinstall = {
         url: "https://dash.cloudflare.com/",
     },
     '4': {
-        title: "W3school",
+        title: "W3schoo",
         url: "https://www.w3school.com.cn/",
     },
     '5': {
@@ -143,6 +143,10 @@ var quick_list_preinstall = {
     },
     '12': {
         title: "哔哩哔哩",
+        url: "https://www.bilibili.com/",
+    },
+    '13': {
+        title: "porn",
         url: "https://www.bilibili.com/",
     }
 };
@@ -382,7 +386,8 @@ function quickData() {
                     <a href="${quick_list[i]['url']}" target="_blank">${quick_list[i]['title']}</a>
                 </div>`;
     }
-    $(".quick-all").html(html + `<div class="quick"><a id="set-quick"><i class="iconfont icon-tianjia-"></i></a></div>`);
+    $(".quick-all").html(html);
+    // + `<div class="quick"><a id="set-quick"><i class="iconfont icon-tianjia-"></i></a></div>`
 }
 
 // 设置-快捷方式加载
@@ -424,42 +429,43 @@ function download(filename, text) {
     document.body.removeChild(element);
 }
 
-// 打开设置
-function openSet() {
-    $("#menu").addClass('on');
+// // 打开设置
+// function openSet() {
+//     $("#menu").addClass('on');
 
-    openBox();
+//     openBox();
 
-    //更改设置图标
-    $("#icon-menu").attr("class", "iconfont icon-home");
+//     //更改设置图标
+//     $("#icon-menu").attr("class", "iconfont icon-home");
 
-    //隐藏书签打开设置
-    $(".mark").css({
-        "display": "none",
-    });
-    $(".set").css({
-        "display": "flex",
-    });
-}
+//     //隐藏书签打开设置
+//     $(".mark").css({
+//         "display": "none",
+//     });
+//     $(".set").css({
+//         "display": "flex",
+//     });
+// }
 
-// 关闭设置
-function closeSet() {
-    $("#menu").removeClass('on');
+// // 关闭设置
+// function closeSet() {
+//     $("#menu").removeClass('on');
 
-    closeBox();
+//     closeBox();
 
-    //更改设置图标
-    $("#icon-menu").attr("class", "iconfont icon-shezhi");
+//     //更改设置图标
+//     $("#icon-menu").attr("class", "iconfont icon-shezhi");
 
-    //隐藏设置
-    $(".set").css({
-        "display": "none",
-    });
+//     //隐藏设置
+//     $(".set").css({
+//         "display": "none",
+//     });
 
-    // 刷新主页数据
-    seList();
-    quickData();
-}
+//     // 刷新主页数据
+//     seList();
+//     quickData();
+// }
+
 
 // 书签显示
 function openBox() {
@@ -558,14 +564,29 @@ $(document).ready(function () {
         }
     });
 
+
+    // if ($("#content").attr("class") === "box") {
+    //     closeBox();
+    //     closeSet();
+    //     blurWd();
+    // } else {
+    //     openBox();
+    // }
+
+
     // 时间点击
     $("#time_text").click(function () {
-        if ($("#content").attr("class") === "box") {
-            closeBox();
-            closeSet();
-            blurWd();
-        } else {
-            openBox();
+        openBox();
+    });
+
+    // 空白点击
+    $(".close_sou").click(function () {
+        if ($("#content").attr("class") === "box"&&(!$("body").hasClass("onsearch"))) {
+        closeBox();
+        closeSet();
+        blurWd();
+        } else if(!$("body").hasClass("onsearch")){
+        openBox();
         }
     });
 

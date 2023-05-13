@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Snavigation</title>
+    <title>Myweb</title>
     <link rel="icon" href="favicon.ico">
     <!-- jQuery -->
     <script src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-y/jquery/3.6.0/jquery.min.js"></script>
@@ -15,8 +15,11 @@
     <link rel="stylesheet" type="text/css" href="./css/loading.css">
     <link rel="stylesheet" type="text/css" href="./css/mobile.css">
     <link rel="stylesheet" type="text/css" href="./css/animation.css">
+    <!-- <link rel="stylesheet" type="text/css" href="./css/time.css"> -->
     <!-- Izitoast -->
     <link rel="stylesheet" href="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-y/izitoast/1.4.0/css/iziToast.min.css">
+    <!-- <script type="text/javascript" src="./js/time.js"></script> -->
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> -->
     <script type="text/javascript"
         src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-y/izitoast/1.4.0/js/iziToast.min.js">
     </script>
@@ -26,6 +29,7 @@
             "https://www.imsyy.top/upgrade-your-browser/index.html?referrer=" + encodeURIComponent(window.location
             .href);
     </script>
+    
 </head>
 
 <body>
@@ -40,7 +44,7 @@
                 <div class="inner three"></div>
             </div>
             <div class="loading-word">
-                <p class="loading-title">Snavigation</p>
+                <p class="loading-title">Codertoro's website</p>
                 <span id="loading-text">加载中</span>
             </div>
         </div>
@@ -49,6 +53,19 @@
     <div class="bg-all">
         <img id="bg" onerror="this.classList.add('error');"></img>
         <div class="cover"></div>
+    </div>
+    <!-- 罗马盘 -->
+    <div class="main-content">
+        <div class="year">
+            <!-- <span>2019</span> -->
+        </div> 
+        <div class="month"></div>
+        <div class="day"></div>
+        <div class="week"></div>
+        <div class="shichen"></div>
+        <div class="hour"></div>
+        <div class="minute"></div>
+        <div class="second"></div>
     </div>
     <!-- 主体内容 -->
     <section id="section" class="section">
@@ -59,10 +76,6 @@
                     <div class="time">
                         <span id="time_text">00<span id="point">:</span>00</span>
                         <span id="day">0&nbsp;月&nbsp;00&nbsp;日&nbsp;周一</span>
-                    </div>
-                    <div class="weather">
-                        <span id="wea_text">N/A</span>&nbsp;<span id="tem2">N/A</span>°C&nbsp;~&nbsp;<span
-                            id="tem1">N/A</span>°C
                     </div>
                 </div>
                 <!-- 搜索框 -->
@@ -280,8 +293,8 @@
                     </div>
                 </div>
                 <!-- 设置图标 -->
-                <div id="menu">
-                    <i id="icon-menu" class="iconfont icon-shezhi"></i>
+                <div id="menu" >
+                    <a id="icon-menu" class="iconfont icon-home" href="https://www.codertoro.com/" target="_blank"></a>
                 </div>
                 <!-- 设置页 -->
                 <div class="set" style="display: none;">
@@ -537,16 +550,6 @@
                 </div>
             </div>
         </div>
-        <!-- 版权信息 -->
-        <div class="foot">
-            <div class="power">Copyright&nbsp;&copy;&nbsp;2020
-                <script>
-                    document.write(' - ' + (new Date()).getFullYear())
-                </script>&nbsp;<a href="https://imsyy.top">無名</a>&nbsp;&amp;&nbsp;
-                <!-- 以下信息请不要修改哦 -->
-                Made&nbsp;by&nbsp;<a href="https://github.com/imsyy/Snavigation" target="_blank">imsyy</a>
-            </div>
-        </div>
     </section>
     <!-- 主体内容结束 -->
     <!-- noscript -->
@@ -557,6 +560,8 @@
     <script type="text/javascript" src="./js/main.js"></script>
     <script type="text/javascript" src="./js/set.js"></script>
     <script type="text/javascript" src="./js/js.cookie.js"></script>
+    <!-- <script type="text/javascript" src="./js/time.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> -->
 </body>
 
 </html>

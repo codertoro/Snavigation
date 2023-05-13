@@ -599,7 +599,7 @@ img.error {
     width: 44px;
     height: 44px;
     position: absolute;
-    right: 8px;
+    left: 18px;
     top: 8px;
     z-index: 2000000;
     cursor: pointer;
@@ -625,7 +625,7 @@ img.error {
     transform: scale(0.90);
 }
 
-#menu i {
+#menu a {
     display: flex;
     justify-content: center;
     align-items: center;
