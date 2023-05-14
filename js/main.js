@@ -24,7 +24,7 @@ window.addEventListener('load', function () {
     setTimeout(function () {
         iziToast.show({
             title: hello,
-            message: '欢迎来到 Snavigation'
+            message: ""
         });
     }, 800);
 
@@ -41,22 +41,22 @@ window.addEventListener('load', function () {
 
 //进入问候
 now = new Date(), hour = now.getHours()
-if (hour < 6) {
-    var hello = "凌晨好";
+if (hour < 5) {
+    var hello = "凌晨好,夜猫子";
 } else if (hour < 9) {
-    var hello = "早上好";
+    var hello = "早上好,元气满满的你～";
 } else if (hour < 12) {
-    var hello = "上午好";
+    var hello = "上午好,我们又见面了·^ - ^·";
 } else if (hour < 14) {
-    var hello = "中午好";
+    var hello = "中午好,中午不睡下午崩溃==";
 } else if (hour < 17) {
-    var hello = "下午好";
+    var hello = "下午好,专注ing";
 } else if (hour < 19) {
-    var hello = "傍晚好";
+    var hello = "傍晚好,适当放松一下！";
 } else if (hour < 22) {
-    var hello = "晚上好";
+    var hello = "晚上好,好孩子从不熬夜+:)";
 } else {
-    var hello = "夜深了";
+    var hello = "夜深了,你不睡我先睡了哦( ̀⌄ ́)";
 }
 
 //获取时间
@@ -86,10 +86,11 @@ function time() {
 //获取天气
 //每日限量 100 次
 //请前往 https://www.tianqiapi.com/index/doc?version=v6 申请（免费）
-fetch('https://yiketianqi.com/api?unescape=1&version=v6&appid=43986679&appsecret=TksqGZT7')
+fetch('https://www.tianqiapi.com/api?version=v6&appid=51465642&appsecret=qge3NRdj')
     .then(response => response.json())
     .then(data => {
         //$('#wea_text').html(data.wea + '&nbsp;' + data.tem_night + '℃' + '&nbsp;~&nbsp;' + data.tem_day + '℃')
+        $('#city_text').text(data.city)
         $('#wea_text').text(data.wea)
         $('#tem1').text(data.tem1)
         $('#tem2').text(data.tem2)

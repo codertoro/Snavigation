@@ -77,6 +77,13 @@
                         <span id="time_text">00<span id="point">:</span>00</span>
                         <span id="day">0&nbsp;月&nbsp;00&nbsp;日&nbsp;周一</span>
                     </div>
+                    <br>
+                    <div class="weather">
+                        <span id="city_text">N/A</span>&nbsp;
+                        <span id="wea_text">N/A</span>&nbsp;
+                        <span id="tem2">N/A</span>°C&nbsp;~&nbsp;
+                        <span id="tem1">N/A</span>°C
+                    </div>
                 </div>
                 <!-- 搜索框 -->
                 <div class="close_sou"></div>
@@ -132,15 +139,15 @@
                 <!-- 书签页 -->
                 <div class="mark" style="display: none;">
                     <div class="tab">
-                        <div class="tab-item active">常用</div>
-                        <div class="tab-item">工具</div>
-                        <div class="tab-item">开发</div>
-                        <div class="tab-item">娱乐</div>
+                        <div class="tab-item active">我的</div>
+                        <div class="tab-item">常用</div>
+                        <div class="tab-item">导航</div>
                         <div class="tab-item">学习</div>
                         <div class="tab-item">设计</div>
+                        <div class="tab-item">娱乐</div>
                     </div>
                     <div class="content products">
-                        <!-- 常用 -->
+                        <!-- 我的 -->
                         <div class="mainCont selected">
                             <div class="quick-all">
                                 <div class="quick">
@@ -150,97 +157,145 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- 开发 -->
+                        <!-- 常用 -->
                         <div class="mainCont">
                             <div class="quick-alls">
                                 <div class="quicks">
-                                    <a href="https://tool.chinaz.com/" target="_blank">
-                                        站长之家
+                                    <a href="https://oss.codertoro.top/Bucket/code/html/fav.html" target="_blank">
+                                        <span class="info_span">Favorities</span>
+                                        <p class="info">我的收藏夹</p>
                                     </a>
                                 </div>
                                 <div class="quicks">
-                                    <a href="https://www.toolnb.com/" target="_blank">
-                                        爱资料工具
+                                    <a href="https://www.baidu.com/" target="_blank">
+                                        <span class="info_span">百度</span>
+                                        <p class="info">www.baidu.com</p>
+                                    </a>
+                                    
+                                </div>
+                                <div class="quicks">
+                                    <a href="https://www.google.com.hk/webhp?hl=zh-CN&sourceid=cnhp" target="_blank">
+                                        <span class="info_span">谷歌</span>
+                                        <p class="info">www.google.com.hk</p>
                                     </a>
                                 </div>
                                 <div class="quicks">
-                                    <a href="https://www.aconvert.com/cn/" target="_blank">
-                                        Aconvert
+                                    <a href="https://www.bing.com/" target="_blank">
+                                        <span class="info_span">Bing</span>
+                                        <p class="info">www.bing.com</p>
                                     </a>
                                 </div>
                                 <div class="quicks">
-                                    <a href="https://next.itellyou.cn/" target="_blank">
-                                        MSDN
+                                    <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank">
+                                        <span class="info_span">G_mail</span>
+                                        <p class="info">mail.google.com</p>
                                     </a>
                                 </div>
                                 <div class="quicks">
-                                    <a href="https://www.bejson.com/" target="_blank">
-                                        BEJSON
+                                    <a href="https://mail.qq.com/" target="_blank">
+                                        <span class="info_span">Q_mail</span>
+                                        <p class="info">mail.qq.com</p>
                                     </a>
                                 </div>
                                 <div class="quicks">
-                                    <a href="https://zh.z-lib.org/" target="_blank">
-                                        Z-Library
+                                    <a href="https://mail.163.com/js6/main.jsp?sid=XDTYhKJtfTWKYDGffyttPuwxyGWwclre&df=mail163_letter#module=welcome.WelcomeModule%7C%7B%7D" target="_blank">
+                                        <span class="info_span">163_mail</span>
+                                        <p class="info">mail.163.com</p>
                                     </a>
                                 </div>
                                 <div class="quicks">
-                                    <a href="https://ebook.huzerui.com/" target="_blank">
-                                        熊猫搜书
+                                    <a href="https://www.csdn.net/" target="_blank">
+                                        <span class="info_span">CSDN</span>
+                                        <p class="info">www.csdn.net</p>
                                     </a>
                                 </div>
                                 <div class="quicks">
-                                    <a href="https://vocalremover.org/ch/" target="_blank">
-                                        VocalreMover
+                                    <a href="https://www.zhihu.com/knowledge-plan/hot-question/hot/0/day" target="_blank">
+                                        <span class="info_span">知乎</span>
+                                        <p class="info">www.zhihu.com</p>
                                     </a>
                                 </div>
                                 <div class="quicks">
-                                    <a href="https://tiomg.org/" target="_blank">
-                                        太美工具
+                                    <a href="https://www.bilibili.com/" target="_blank">
+                                        <span class="info_span">B站</span>
+                                        <p class="info">www.bilibili.com</p>
                                     </a>
                                 </div>
                                 <div class="quicks">
-                                    <a href="https://s.threatbook.cn/" target="_blank">
-                                        微步云沙箱
+                                    <a href="https://www.youdao.com/" target="_blank">
+                                        <span class="info_span">有道</span>
+                                        <p class="info">www.youdao.com</p>
                                     </a>
                                 </div>
                                 <div class="quicks">
-                                    <a href="https://www.tablesgenerator.com/" target="_blank">
-                                        表格生成
+                                    <a href="https://app.bestzixue.com/tutorialFindWeaknessEnd" target="_blank">
+                                        <span class="info_span">知能行</span>
+                                        <p class="info">高数刷题神器</p>
                                     </a>
+                                    
                                 </div>
                                 <div class="quicks">
-                                    <a href="https://write.imsyy.top/" target="_blank">
-                                        MD 编辑器
-                                    </a>
-                                </div>
-                                <div class="quicks">
-                                    <a href="https://vocalremover.org/ch/" target="_blank">
-                                        VocalreMover
+                                    <a href="http://172.20.20.1/" target="_blank">
+                                        <span class="info_span">校园网</span>
+                                        <p class="info">DLUT的校园网又双叒叕连不上了TT</p>
                                     </a>
                                 </div>
                             </div>
                         </div>
-                        <!-- 工具 -->
+                        <!-- 导航 -->
                         <div class="mainCont">
                             <div class="quick-alls">
-                                <div class="quicks" data-s="bilibili" title="哔哩哔哩 (゜-゜)つロ 干杯~">
-                                    <a href="https://www.bilibili.com/" target="_blank">
-                                        哔哩哔哩
+                                <div class="quicks">
+                                    <a href="http://cxy521.com/" target="_blank">
+                                        <span class="info_span">CXY521</span>
+                                        <p class="info">收藏好久了～</p>
                                     </a>
                                 </div>
-                                <div class="quicks" data-s="github" title="GitHub">
-                                    <a href="https://github.com/" target="_blank">
-                                        GitHub
+                                <div class="quicks">
+                                    <a href="https://it-gou.com/" target="_blank">
+                                        <span class="info_span">IT狗</span>
+                                        <p class="info">看起来不错！！还可以登录</p>
                                     </a>
                                 </div>
-                                <div class="quicks" data-s="v2ex" title="V2EX">
-                                    <a href="https://www.v2ex.com/" target="_blank">
-                                        V2EX
+                                <div class="quicks">
+                                    <a href="https://www.likebookmark.com/" target="_blank">
+                                        <span class="info_span">喜欢书签</span>
+                                        <p class="info">感觉挺全的！</p>
                                     </a>
                                 </div>
-                                <div class="quicks" data-s="steam" title="Steam">
-                                    <a href="https://store.steampowered.com/" target="_blank">
-                                        Steam
+                            </div>
+                        </div>
+                        
+                        <!-- 学习 -->
+                        <div class="mainCont">
+                            <div class="quick-alls">
+                                <div class="quicks">
+                                    <a href="https://blog.codertoro.top/" target="_blank">
+                                        <span class="info_span">我的Craft笔记</span>
+                                        <p class="info">好看但已经弃用的笔记软件==</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 创作 -->
+                        <div class="mainCont">
+                            <div class="quick-alls">
+                                <div class="quicks">
+                                    <a href="https://dns.console.aliyun.com/#/dns/setting/codertoro.top" target="_blank">
+                                        <span class="info_span">DNS解析</span>
+                                        <p class="info">阿里云解析</p>
+                                    </a>
+                                </div>
+                                <div class="quicks">
+                                    <a href="https://vercel.com/dashboard" target="_blank">
+                                        <span class="info_span">Vercel</span>
+                                        <p class="info">Serverless的先驱,函数计算很牛掰^_^</p>
+                                    </a>
+                                </div>
+                                <div class="quicks">
+                                    <a href="https://github.com/codertoro/" target="_blank">
+                                        <span class="info_span">My github</span>
+                                        <p class="info">程序猿的家</p>
                                     </a>
                                 </div>
                             </div>
@@ -248,44 +303,10 @@
                         <!-- 娱乐 -->
                         <div class="mainCont">
                             <div class="quick-alls">
-                                <div class="quicks" data-s="bilibili" title="哔哩哔哩 (゜-゜)つロ 干杯~">
-                                    <a href="https://www.bilibili.com/" target="_blank">
-                                        哔哩哔哩
-                                    </a>
-                                </div>
-                                <div class="quicks" data-s="github" title="GitHub">
-                                    <a href="https://github.com/" target="_blank">
-                                        GitHub
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- 学习 -->
-                        <div class="mainCont">
-                            <div class="quick-alls">
-                                <div class="quicks" data-s="bilibili" title="哔哩哔哩 (゜-゜)つロ 干杯~">
-                                    <a href="https://www.bilibili.com/" target="_blank">
-                                        哔哩哔哩
-                                    </a>
-                                </div>
-                                <div class="quicks" data-s="github" title="GitHub">
-                                    <a href="https://github.com/" target="_blank">
-                                        GitHub
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- 设计 -->
-                        <div class="mainCont">
-                            <div class="quick-alls">
-                                <div class="quicks" data-s="bilibili" title="哔哩哔哩 (゜-゜)つロ 干杯~">
-                                    <a href="https://www.bilibili.com/" target="_blank">
-                                        哔哩哔哩
-                                    </a>
-                                </div>
-                                <div class="quicks" data-s="github" title="GitHub">
-                                    <a href="https://github.com/" target="_blank">
-                                        GitHub
+                                <div class="quicks">
+                                    <a href="https://www.btnull.in/" target="_blank">
+                                        <span class="info_span">btull</span>
+                                        <p class="info">稳定了很久的影视资源网～免费下载4K</p>
                                     </a>
                                 </div>
                             </div>

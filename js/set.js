@@ -98,57 +98,35 @@ var se_list_preinstall = {
 // 默认快捷方式
 var quick_list_preinstall = {
     '1': {
-        title: "主站",
+        title: "个人主页",
         url: "https://www.codertoro.com/",
+        info: "www.codertoro.com",
     },
     '2': {
-        title: "GitHub",
-        url: "https://github.com/",
+        title: "博客主页",
+        url: "https://www.codertoro.top/",
+        info: "www.cdoertoro.top",
     },
     '3': {
-        title: "Cloudflare",
-        url: "https://dash.cloudflare.com/",
+        title: "网址导航",
+        url: "https://web.codertoro.com/",
+        info: "web.codertoro.com",
     },
     '4': {
-        title: "W3schoo",
-        url: "https://www.w3school.com.cn/",
+        title: "Chatbot ui",
+        url: "https://gpt.codertoro.com/",
+        info: "gpt.codertoro.com"
     },
     '5': {
-        title: "腾讯云",
-        url: "https://console.cloud.tencent.com/",
+        title: "ChatGPT学术优化",
+        url: "https://gpt.codertoro.top/",
+        info: "gpt.codertoro.top"
     },
     '6': {
-        title: "阿里云",
-        url: "https://console.aliyun.com/",
+        title: "网址导航(旧版)",
+        url: "https://myweb.codertoro.com/",
+        info: "myweb.codertoro.com"
     },
-    '7': {
-        title: "百度网盘",
-        url: "https://pan.baidu.com/",
-    },
-    '8': {
-        title: "阿里云盘",
-        url: "https://www.aliyundrive.com/drive/",
-    },
-    '9': {
-        title: "Office",
-        url: "https://www.office.com/",
-    },
-    '10': {
-        title: "又拍云",
-        url: "https://console.upyun.com/",
-    },
-    '11': {
-        title: "CSDN",
-        url: "https://www.csdn.net/",
-    },
-    '12': {
-        title: "哔哩哔哩",
-        url: "https://www.bilibili.com/",
-    },
-    '13': {
-        title: "porn",
-        url: "https://www.bilibili.com/",
-    }
 };
 
 // 获取搜索引擎列表
@@ -382,8 +360,12 @@ function quickData() {
     var html = "";
     var quick_list = getQuickList();
     for (var i in quick_list) {
-        html += `<div class="quick">
-                    <a href="${quick_list[i]['url']}" target="_blank">${quick_list[i]['title']}</a>
+        html += `<div class="quicks">
+                    <a href="${quick_list[i]['url']}" target="_blank">
+                    <span class="info_span">${quick_list[i]['title']}</span>
+                    <p class="info">${quick_list[i]['info']?quick_list[i]['info']:""}</p>
+                    </a>
+                    
                 </div>`;
     }
     $(".quick-all").html(html);
@@ -410,6 +392,22 @@ function setQuickInit() {
     }
     $(".quick_list_table").html(html);
 }
+
+//quicks获取link
+// var quicksDiv = document.querySelector(".quicks");
+// var quicksLink = document.querySelector(".quicks a");
+
+// document.querySelector(".quicks").addEventListener("click", function() {
+//     alert("123");
+// //   window.location.href = quicksLink.getAttribute("href");
+// });
+// //quick获取link
+// var quicksDiv_quick = document.querySelector(".quick");
+// var quicksLink_quick = document.querySelector(".quick a");
+
+// quicksDiv_quick.addEventListener("click", function() {
+//   window.location.href = quicksLink_quick.getAttribute("href");
+// });
 
 /**
  * 下载文本为文件
@@ -475,7 +473,7 @@ function openBox() {
     });
     //时间上移
     $(".tool-all").css({
-        "transform": 'translateY(-160%)'
+        "transform": 'translateY(-175%)'
     });
     //背景模糊
     $('#bg').css({
