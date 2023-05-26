@@ -113,14 +113,14 @@ var quick_list_preinstall = {
         info: "web.codertoro.com",
     },
     '4': {
-        title: "Chatbot ui",
-        url: "https://gpt.codertoro.com/",
-        info: "gpt.codertoro.com"
+        title: "ChatGPT",
+        url: "https://ai.codertoro.com/",
+        info: "ai.codertoro.com"
     },
     '5': {
-        title: "ChatGPT学术优化",
-        url: "https://gpt.codertoro.top/",
-        info: "gpt.codertoro.top"
+        title: "Craft Blog",
+        url: "https://blog.codertoro.top/",
+        info: "blog.codertoro.top"
     },
     '6': {
         title: "网址导航(旧版)",

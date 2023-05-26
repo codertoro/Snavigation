@@ -42,21 +42,21 @@ window.addEventListener('load', function () {
 //进入问候
 now = new Date(), hour = now.getHours()
 if (hour < 5) {
-    var hello = "凌晨好,夜猫子";
+    var hello = "凌晨好, 夜猫子";
 } else if (hour < 9) {
-    var hello = "早上好,元气满满的你～";
+    var hello = "早上好, 元气满满的你～";
 } else if (hour < 12) {
-    var hello = "上午好,我们又见面了·^ - ^·";
+    var hello = "上午好, 我们又见面了·^ - ^·";
 } else if (hour < 14) {
-    var hello = "中午好,中午不睡下午崩溃==";
+    var hello = "中午好, 中午不睡下午崩溃==";
 } else if (hour < 17) {
-    var hello = "下午好,专注ing";
+    var hello = "下午好, 专注ing";
 } else if (hour < 19) {
-    var hello = "傍晚好,适当放松一下！";
+    var hello = "傍晚好, 适当放松一下！";
 } else if (hour < 22) {
-    var hello = "晚上好,好孩子从不熬夜+:)";
+    var hello = "晚上好, 好孩子从不熬夜+:)";
 } else {
-    var hello = "夜深了,你不睡我先睡了哦( ̀⌄ ́)";
+    var hello = "夜深了, 你不睡我先睡了哦( ̀⌄ ́)";
 }
 
 //获取时间

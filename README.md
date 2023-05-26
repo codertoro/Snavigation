@@ -3,7 +3,11 @@
 一个简约的起始页
 </p>
 
+访问地址：[web.codertoro.com](https://web.codertoro.com/)
+
 ![Snavigation.png](https://s2.loli.net/2022/07/15/FE6U2BJCynHDep8.jpg)
+
+
 
 >尚未完成
 
@@ -42,3 +46,11 @@
 * [sou2](https://github.com/yeetime/sou2/)
 
 <a title="SSL" target="_blank" href="https://myssl.com/seal/detail?domain=blog.imsyy.top"><img src="https://img.shields.io/badge/MySSL-安全认证-brightgreen"></a>&nbsp;<a title="CDN" target="_blank" href="https://cdnjs.com/"><img src="https://img.shields.io/badge/CDN-Cloudflare-blue"></a>&nbsp;<a title="Copyright" target="_blank" href="https://imsyy.top/"><img src="https://img.shields.io/badge/Copyright%20%C2%A9%202020--2022-%E7%84%A1%E5%90%8D-red"></a>
+
+### 操作流程
+- open this project with VSCode
+- right click, choose [open in browser]
+- `git add .`
+- `git commit -m "更新信息"`
+- `git push https://github.com/codertoro/Snavigation.git main`
+
