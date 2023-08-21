@@ -103,30 +103,36 @@ var quick_list_preinstall = {
         info: "www.codertoro.com",
     },
     '2': {
+        title: "Notion",
+        url: "https://codertoro.notion.site/",
+        info: "codertoro.notion.site"
+    },
+    '3': {
         title: "博客主页",
         url: "https://www.codertoro.top/",
         info: "www.cdoertoro.top",
     },
-    '3': {
+    '4': {
         title: "网址导航",
         url: "https://web.codertoro.com/",
         info: "web.codertoro.com",
     },
-    '4': {
+    '5': {
         title: "ChatGPT",
         url: "https://ai.codertoro.com/",
         info: "ai.codertoro.com"
     },
-    '5': {
+    '6': {
         title: "Craft Blog",
         url: "https://blog.codertoro.top/",
         info: "blog.codertoro.top"
     },
-    '6': {
+    '7': {
         title: "网址导航(旧版)",
         url: "https://myweb.codertoro.com/",
         info: "myweb.codertoro.com"
     },
+    
 };
 
 // 获取搜索引擎列表

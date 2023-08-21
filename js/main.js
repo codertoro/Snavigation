@@ -52,7 +52,7 @@ if (hour < 5) {
 } else if (hour < 17) {
     var hello = "下午好, 专注ing";
 } else if (hour < 19) {
-    var hello = "傍晚好, 适当放松一下！";
+    var hello = "傍晚好, 适当放松一下吧！";
 } else if (hour < 22) {
     var hello = "晚上好, 好孩子从不熬夜+:)";
 } else {
